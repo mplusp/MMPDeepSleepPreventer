@@ -196,7 +196,7 @@
 	
 	if (propertySetError)
 	{
-		NSLog(@"Error setting kAudioSessionProperty_OverrideCategoryMixWithOthers: %d", propertySetError);
+		MMPALog(@"Error setting kAudioSessionProperty_OverrideCategoryMixWithOthers: %d", propertySetError);
 	}
 	
 	
