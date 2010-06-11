@@ -46,8 +46,8 @@
 
 @interface MMPDeepSleepPreventer ()
 
-- (void)MMP_playPreventSleepSound;
-- (void)MMP_setUpAudioSession;
+- (void)mmp_playPreventSleepSound;
+- (void)mmp_setUpAudioSession;
 
 @end
 
@@ -70,7 +70,7 @@
 	if ( !(self = [super init]) )
 		return nil;
 	
-	[self MMP_setUpAudioSession];
+	[self mmp_setUpAudioSession];
 	
 	// Set up path to sound file
 	NSString *soundFilePath = [[NSBundle mainBundle] pathForResource:@"MMPSilence"
@@ -114,11 +114,11 @@
 	// To prevent the iPhone from falling asleep due to timing/performance issues, we play a sound file every five seconds.
 	
 	// We create a new repeating timer, that begins firing immediately and then every five seconds afterwards.
-	// Every time it fires, it calls -MMP_playPreventSleepSound.
+	// Every time it fires, it calls -mmp_playPreventSleepSound.
 	NSTimer *preventSleepTimer = [[NSTimer alloc] initWithFireDate:[NSDate dateWithTimeIntervalSinceNow:0]
 														  interval:5.0
 															target:self
-														  selector:@selector(MMP_playPreventSleepSound)
+														  selector:@selector(mmp_playPreventSleepSound)
 														  userInfo:nil
 														   repeats:YES];
 	self.preventSleepTimer = preventSleepTimer;
@@ -139,13 +139,13 @@
 #pragma mark -
 #pragma mark Private Methods
 
-- (void)MMP_playPreventSleepSound
+- (void)mmp_playPreventSleepSound
 {
 	[self.audioPlayer play];
 }
 
 
-- (void)MMP_setUpAudioSession
+- (void)mmp_setUpAudioSession
 {
 	// Initialize audio session
 	AudioSessionInitialize
