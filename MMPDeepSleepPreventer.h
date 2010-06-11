@@ -34,12 +34,13 @@
 //
 
 #pragma mark -
-#pragma mark MMPDLog
+#pragma mark MMPLog
 
 // Set up some advanced logging preprocessor macros to replace NSLog.
-// I usually have this in an external file (MMPDLog.h) which is maintained in its own git repository.
-// I add this repository in my other projects as a submodule (via git submodule) and import the MMPDLog.h
+// I usually have this in an external file (MMPLog.h) which is maintained in its own git repository.
+// I add this repository in my other projects as a submodule (via git submodule) and import the MMPLog.h
 // in a project's Prefix.pch.
+//
 // For convenience reasons, I just include these macros here, so other people are not confused by
 // git submodule if they are unfamiliar with it or simply don't have to bother and can use MMPDeepSleepPreventer
 // as simple drop-in code.
