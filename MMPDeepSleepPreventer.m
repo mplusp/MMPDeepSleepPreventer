@@ -198,26 +198,6 @@
 	{
 		MMPALog(@"Error setting kAudioSessionProperty_OverrideCategoryMixWithOthers: %d", propertySetError);
 	}
-	
-	
-//	// FIXXXME: Why did I put this here again?
-//	// FIXXXME: This should be done, when 
-//
-//	// Set up audio session output route overriding. 
-//	propertySetError = 0;
-//	UInt32 audioRouteOverride = kAudioSessionOverrideAudioRoute_Speaker;
-//	
-//	propertySetError =	AudioSessionSetProperty
-//	(
-//		kAudioSessionProperty_O,
-//		sizeof(doChangeDefaultRoute),
-//		&doChangeDefaultRoute
-//	);
-//	if (propertySetError)
-//	{
-//		MMPALog(@"Error setting kAudioSessionProperty_OverrideCategoryMixWithOthers: %d", propertySetError);
-//	}
-
 }
 
 @end
