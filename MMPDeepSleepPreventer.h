@@ -71,17 +71,15 @@
 
 @interface MMPDeepSleepPreventer : NSObject
 {
- @private
-	AVAudioPlayer	*audioPlayer_;
-	NSTimer			*preventSleepTimer_;
+
 }
 
 
 #pragma mark -
 #pragma mark Properties
 
-@property (nonatomic, retain) AVAudioPlayer	*audioPlayer;
-@property (nonatomic, retain) NSTimer		*preventSleepTimer;
+@property (nonatomic, retain) AVAudioPlayer *audioPlayer;
+@property (nonatomic, retain) NSTimer       *preventSleepTimer;
 
 
 #pragma mark -
