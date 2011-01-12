@@ -1,6 +1,10 @@
 Description:
 	MMPDeepSleepPreventer is an Objective-C class used to prevent iOS devices from deep sleeping.
-	This has been tested on iPhone OS 3.0, 3.0.1 and 3.1.x only, so far.
+	This has been tested on an iOS versions 3.0 to 4.2.1, so far and should work on all devices,
+	running one of these iOS versions.
+	
+	MMPDeepSleepPreventer is released under the New BSD License. (Below is the exact license text).
+	If you use this code a little attribution note would be greatly appreciated.
 
 
 How-To Use:
@@ -19,7 +23,7 @@ Inspired by:
 
 
 License:
-Copyright (c) 2009-2010, Marco Peluso - marcopeluso.com
+Copyright (c) 2009-2011, Marco Peluso - marcopeluso.com
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
